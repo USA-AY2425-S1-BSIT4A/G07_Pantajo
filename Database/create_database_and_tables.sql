@@ -1,3 +1,7 @@
+CREATE DATABASE Galadevs;
+
+USE Galadevs;
+
 CREATE TABLE Admin (
     AdminID INT(10) NOT NULL,
     AdminName VARCHAR(255) NOT NULL,
