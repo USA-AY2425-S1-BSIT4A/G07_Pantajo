@@ -1,3 +1,5 @@
+USE Galadevs;
+
 SELECT AdminID, AdminName, AdminEmail, Role FROM Admin;
 
 SELECT UserID, UserName, UserEmail FROM User;
