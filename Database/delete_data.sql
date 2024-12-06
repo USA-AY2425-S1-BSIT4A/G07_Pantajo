@@ -1,3 +1,4 @@
+USE Galadevs;
 DELETE FROM Decision
 WHERE DecisionID = 1;
 
@@ -6,6 +7,7 @@ WHERE ReviewID = 1;
 
 DELETE FROM User
 WHERE UserID = 1;
+
 
 DELETE FROM Admin
 WHERE AdminID = 1;
