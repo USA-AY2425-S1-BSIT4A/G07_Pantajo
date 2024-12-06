@@ -1,5 +1,5 @@
 # Group 7
-BANGKAPP: TOURISM WEBSITE-APP FOR CARLES
+GALADEVS: AGENCY WEBSITE-APP
 
 ## Members
 - Pantajo, Rod Julian
