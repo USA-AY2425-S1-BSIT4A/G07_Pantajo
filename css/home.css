@@ -621,7 +621,7 @@ section{
       }
     
       .card {
-        width: 250px;
+        width: 100%;
         height: 220px;
       }
       .about-us {
