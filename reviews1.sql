@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS reviews1;
+USE reviews1;
+
+CREATE TABLE IF NOT EXISTS user_reviews (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    comment TEXT NOT NULL,
+    rating INT CHECK (rating BETWEEN 1 AND 5),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
