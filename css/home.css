@@ -273,16 +273,27 @@ section{
 
 
   /* testimonial */
-  h1 {
+.testimonial-main{
+  padding: 10rem 0;
+}
+
+  .test h1{
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.test p{
+  margin-bottom: 10rem;
+  text-align: center;
+  color: var(--light-black);
 }
 
 /* Buttons */
 button {
     margin: 5px;
     padding: 10px 20px;
-    background-color: #00796b;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -290,12 +301,25 @@ button {
 }
 
 button:hover {
-    background-color: #005f52;
+    background-color: var(--main-color);
 }
 
 /* Create Button Style */
 .create-button {
-    margin-bottom: 20px;
+  display: block;         /* Makes the button a block-level element */
+  margin: 20px auto;      /* Centers the button horizontally with top and bottom margins */
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: var(--light-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;     /* Ensures the text inside the button is centered */
+}
+
+.create-button:hover {
+  background-color: var(--main-color);
 }
 
 /* Form Styles */
@@ -313,6 +337,9 @@ button:hover {
 .review-form select,
 .review-form button {
     width: 100%;
+    background-color:var(--light-white);
+    border: .1rem solid var(--light-black);
+    border-radius: 10px;
     margin-bottom: 10px;
     padding: 10px;
     font-size: 1rem;
@@ -336,34 +363,63 @@ button:hover {
 
 /* Testimonial Card */
 .testimonial {
-    position: relative;
-    background-color: #f9f9f9;
-    padding: 20px;
-    min-width: 300px;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    display: inline-block;
+  position: relative;          /* Ensure the testimonial is the positioning context */
+  width: 350px;                /* Fixed width */
+  height: 200px;               /* Fixed height */
+  background-color: var(--light-white);
+  border-radius: 20px;         /* Reduced border radius for a cleaner look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
 }
 
 /* Quote */
 .quote {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  width: 100%;                 /* Ensure it takes full width */
+  max-width: 90%;             /* Prevent overflow beyond the container */
+  white-space: normal;         /* Allow text to wrap to the next line */
+  word-wrap: break-word;       /* Break long words if necessary */
+  overflow-wrap: break-word;   /* Ensure long words break correctly */
+  text-overflow: clip;         /* Avoid ellipsis; clip the overflow if necessary */
+  line-height: 1.2;             /* Adjust line height for better readability */
 }
 
 /* Rating */
 .rating {
-    color: gold;
-    margin-bottom: 10px;
+  color: gold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  width: 350px;               /* Fixed width */
+  height: 30px;                /* Fixed height */
+  overflow: hidden;            /* Hide overflow if necessary */
+  word-wrap: break-word;       /* Wrap long words */
+  overflow-wrap: break-word;   /* Ensures long words break to the next line */
 }
 
 /* Author */
 .author {
-    font-size: 0.9rem;
-    color: #555;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: var(--light-black);
+  width: 100%;                 /* Ensure it takes full width */
+  max-width: 100%;             /* Prevent overflow beyond the container */
+  white-space: normal;         /* Allow text to wrap to the next line */
+  word-wrap: break-word;       /* Break long words if necessary */
+  overflow-wrap: break-word;   /* Ensure long words break correctly */
+  text-overflow: clip;         /* Avoid ellipsis; clip the overflow if necessary */
+  line-height: 1.2;            /* Maintain good readability with line height */
 }
 
 /* Three-dot Menu */
@@ -382,7 +438,7 @@ button:hover {
 }
 
 .menu-button:hover {
-    color: #000;
+    color: var(--light-black);
 }
 
 .menu-options {
