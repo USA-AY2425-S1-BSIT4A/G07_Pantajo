@@ -106,11 +106,15 @@
     </section>
   </div>
   
-
+<section class="testimonial-main">
+  <div class="test">
   <h1>Here's what our clients say about us</h1>
+  <p>We help grow businesses and organizations with digital solutions that actually work. <br>Hear it from the people we've actually worked with.</p>
+  </div>
+
 
 <!-- Create Review Button -->
-<button id="createButton" class="create-button" onclick="toggleCreateForm()">Create Review</button>
+
 
 <!-- Create Review Form (Hidden by Default) -->
 <form id="createForm" action="create.php" method="POST" class="review-form" style="display: none;">
@@ -124,7 +128,7 @@
         <option value="4">4 Stars</option>
         <option value="5">5 Stars</option>
     </select>
-    <button type="submit">Submit Review</button>
+    <button class="submit" type="submit">Submit Review</button>
     <button type="button" onclick="toggleCreateForm()">Cancel</button>
 </form>
 
@@ -149,7 +153,11 @@
     <div class="carousel" id="carousel"></div>
 </div>
 
+<button id="createButton" class="create-button" onclick="toggleCreateForm()">Create Review</button>
 
+
+
+</section>
 
 
 
